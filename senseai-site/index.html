@@ -1,0 +1,902 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SenseAI — AI-Based Early Autism Screening System</title>
+  <meta name="description"
+    content="SenseAI is an AI-powered multi-sensory behavioral screening system for early Autism Spectrum Disorder (ASD) detection — gaze tracking, behavioral analysis, response-to-name, and cognitive flexibility." />
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- ambient background layers -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-blobs" aria-hidden="true">
+    <span class="blob blob-amber"></span>
+    <span class="blob blob-teal"></span>
+    <span class="blob blob-deep"></span>
+  </div>
+
+  <!-- ============== NAV ============== -->
+  <header class="nav">
+    <div class="nav-inner container">
+      <a href="#home" class="brand">
+        <img src="images/logo.jpg" alt="SenseAI logo" class="brand-logo" />
+        <span>Sense<span class="grad-text">AI</span></span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" />
+      <label for="nav-toggle" class="nav-burger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#domain">Research</a>
+        <a href="#demo">Demo</a>
+        <a href="#milestones">Milestones</a>
+        <a href="#documents">Documents</a>
+        <a href="#presentations">Presentations</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="nav-progress" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <!-- ============== HERO ============== -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <span class="pill pill-primary fade-in" style="--d:0ms">
+          <span class="dot"></span> Research Project · 2026
+        </span>
+
+        <div class="hero-logo fade-in" style="--d:80ms">
+          <span class="hero-logo-glow"></span>
+          <img src="images/logo.jpg" alt="SenseAI" class="float" />
+        </div>
+
+        <h1 class="hero-title fade-in" style="--d:160ms">
+          Intelligent Early <span class="grad-text">Autism Screening</span> System
+        </h1>
+        <p class="hero-sub fade-in" style="--d:240ms">
+          SenseAI is an AI-powered multi-sensory behavioral screening system designed to support
+          early detection of Autism Spectrum Disorder (ASD). It integrates gaze tracking, behavioral
+          analysis, response-to-name testing, and cognitive flexibility assessment to provide
+          objective and scalable screening.
+        </p>
+
+        <div class="hero-ctas fade-in" style="--d:320ms">
+          <a href="#domain" class="btn btn-primary">
+            Explore Research
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#demo" class="btn btn-ghost">Watch Demo</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat glass fade-in" style="--d:400ms">
+            <div class="stat-v grad-text">4</div>
+            <div class="stat-l">Core Modules</div>
+          </div>
+          <div class="stat glass fade-in" style="--d:480ms">
+            <div class="stat-v grad-text">AI</div>
+            <div class="stat-l">Multi-Sensory</div>
+          </div>
+          <div class="stat glass fade-in" style="--d:560ms">
+            <div class="stat-v grad-text">ASD</div>
+            <div class="stat-l">Early Detection</div>
+          </div>
+          <div class="stat glass fade-in" style="--d:640ms">
+            <div class="stat-v grad-text">2026</div>
+            <div class="stat-l">Final Year</div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#domain" class="scroll-cue" aria-label="Scroll down">
+        <span class="scroll-label">Scroll</span>
+        <span class="mouse"><span class="wheel"></span></span>
+      </a>
+    </section>
+
+    <!-- ============== RESEARCH DOMAIN (advanced sidebar tabs) ============== -->
+    <section id="domain" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="pill pill-primary"><span class="dot"></span> Academic Foundation</span>
+          <h2>Research <span class="grad-text">Domain</span></h2>
+          <p>Explore each pillar of the research — literature, gaps, problem, objectives, methodology, and the
+            technology stack.</p>
+        </div>
+
+        <div class="domain-shell glass">
+          <!-- radio inputs power tab switching, no JS needed -->
+          <input type="radio" name="dtab" id="dtab-1" class="dtab-input" checked />
+          <input type="radio" name="dtab" id="dtab-2" class="dtab-input" />
+          <input type="radio" name="dtab" id="dtab-3" class="dtab-input" />
+          <input type="radio" name="dtab" id="dtab-4" class="dtab-input" />
+          <input type="radio" name="dtab" id="dtab-5" class="dtab-input" />
+          <input type="radio" name="dtab" id="dtab-6" class="dtab-input" />
+
+          <aside class="domain-side" role="tablist" aria-label="Research domain sections">
+            <label for="dtab-1" class="dtab-btn">
+              <span class="dtab-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                </svg></span>
+              <span>Literature Survey</span>
+            </label>
+            <label for="dtab-2" class="dtab-btn">
+              <span class="dtab-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 8v4M12 16h.01" />
+                </svg></span>
+              <span>Research Gap</span>
+            </label>
+            <label for="dtab-3" class="dtab-btn">
+              <span class="dtab-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                  <path d="M12 9v4M12 17h.01" />
+                </svg></span>
+              <span>Research Problem</span>
+            </label>
+            <label for="dtab-4" class="dtab-btn">
+              <span class="dtab-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <circle cx="12" cy="12" r="6" />
+                  <circle cx="12" cy="12" r="2" />
+                </svg></span>
+              <span>Research Objectives</span>
+            </label>
+            <label for="dtab-5" class="dtab-btn">
+              <span class="dtab-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="6" cy="6" r="3" />
+                  <circle cx="18" cy="6" r="3" />
+                  <circle cx="12" cy="18" r="3" />
+                  <path d="M6 9v3a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V9" />
+                  <path d="M12 14v1" />
+                </svg></span>
+              <span>Methodology</span>
+            </label>
+            <label for="dtab-6" class="dtab-btn">
+              <span class="dtab-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                  <polyline points="2 17 12 22 22 17" />
+                  <polyline points="2 12 12 17 22 12" />
+                </svg></span>
+              <span>Technologies</span>
+            </label>
+          </aside>
+
+          <div class="domain-panes">
+            <article class="dpane" id="dpane-1" role="tabpanel">
+              <header class="dpane-head">
+                <span class="dpane-tag"><span class="dot"></span> 01 · Literature Survey</span>
+                <h3>What prior research tells us</h3>
+              </header>
+              <p>Existing ASD screening methods rely heavily on <span class="hl">subjective observation and
+                  questionnaires</span>, which can delay diagnosis and introduce inconsistencies across different
+                clinical environments. Recent computer-vision and ML studies show measurable behavioral biomarkers —
+                gaze patterns, response latency, and motor responses — but few production-ready, multi-sensory systems
+                exist.</p>
+              <ul class="bullets">
+                <li>Manual observation tools remain the clinical default (M-CHAT, ADOS).</li>
+                <li>Eye-tracking and head-pose studies show high diagnostic value.</li>
+                <li>ML pipelines for behavioral data remain mostly research-only.</li>
+              </ul>
+            </article>
+
+            <article class="dpane" id="dpane-2" role="tabpanel">
+              <header class="dpane-head">
+                <span class="dpane-tag"><span class="dot"></span> 02 · Research Gap</span>
+                <h3>The blind spot we are addressing</h3>
+              </header>
+              <p>There is a critical lack of <span class="hl">scalable, objective, and technology-driven screening
+                  systems</span> that can be seamlessly integrated into real-world clinical and home environments.
+                Current solutions are either expensive specialist tools or oversimplified questionnaires — nothing
+                bridges the gap.</p>
+              <ul class="bullets">
+                <li>No affordable multi-sensory screening tool for early-stage ASD.</li>
+                <li>Limited explainability in existing ML-based attempts.</li>
+                <li>Few systems combine gaze + behavior + auditory + cognitive signals.</li>
+              </ul>
+            </article>
+
+            <article class="dpane" id="dpane-3" role="tabpanel">
+              <header class="dpane-head">
+                <span class="dpane-tag"><span class="dot"></span> 03 · Research Problem</span>
+                <h3>Why early detection is hard today</h3>
+              </header>
+              <p>Early ASD detection remains difficult due to <span class="hl">limited access to specialized
+                  pediatricians</span>, high costs, and a heavy reliance on manual, time-consuming assessment
+                techniques. Families in remote regions can wait months or years for a clinical diagnosis.</p>
+              <ul class="bullets">
+                <li>Long waiting lists for specialist appointments.</li>
+                <li>High per-assessment cost limits accessibility.</li>
+                <li>Subjective scoring varies between clinicians.</li>
+              </ul>
+            </article>
+
+            <article class="dpane" id="dpane-4" role="tabpanel">
+              <header class="dpane-head">
+                <span class="dpane-tag"><span class="dot"></span> 04 · Research Objectives</span>
+                <h3>What SenseAI sets out to deliver</h3>
+              </header>
+              <ul class="bullets">
+                <li>Develop an AI-based multi-sensory screening system.</li>
+                <li>Capture behavioral features objectively from interactive tasks.</li>
+                <li>Provide fast, reliable, and explainable predictions.</li>
+                <li>Support clinicians with decision-ready insights and reports.</li>
+                <li>Run on a child-friendly mobile interface for home or clinic.</li>
+              </ul>
+            </article>
+
+            <article class="dpane" id="dpane-5" role="tabpanel">
+              <header class="dpane-head">
+                <span class="dpane-tag"><span class="dot"></span> 05 · Methodology</span>
+                <h3>From interaction to insight</h3>
+              </header>
+              <p>Data is collected through interactive child-friendly tasks via a mobile interface, processed using
+                feature extraction pipelines, and analyzed with machine learning models (Logistic Regression, Random
+                Forest) to generate a comprehensive screening report.</p>
+              <div class="steps">
+                <div class="step"><span>01</span><b>Data Collection</b></div>
+                <div class="step"><span>02</span><b>Preprocessing</b></div>
+                <div class="step"><span>03</span><b>Feature Extraction</b></div>
+                <div class="step"><span>04</span><b>Model Training</b></div>
+                <div class="step"><span>05</span><b>Prediction</b></div>
+                <div class="step"><span>06</span><b>Report</b></div>
+              </div>
+            </article>
+
+            <article class="dpane" id="dpane-6" role="tabpanel">
+              <header class="dpane-head">
+                <span class="dpane-tag"><span class="dot"></span> 06 · Technologies</span>
+                <h3>The stack powering SenseAI</h3>
+              </header>
+              <p>A pragmatic mix of mobile, backend, and ML tooling — chosen for portability, speed of iteration, and
+                clinical-grade reliability.</p>
+              <div class="chips">
+                <span class="chip">Flutter (Mobile App)</span>
+                <span class="chip">FastAPI (Backend)</span>
+                <span class="chip">Python</span>
+                <span class="chip">OpenCV</span>
+                <span class="chip">Machine Learning</span>
+                <span class="chip">TensorFlow</span>
+                <span class="chip">Scikit-learn</span>
+                <span class="chip">Firebase</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== SYSTEM DEMONSTRATIONS (4 modules) ============== -->
+    <section id="demo" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="pill pill-primary"><span class="dot"></span> System Demo</span>
+          <h2>Component <span class="grad-text">Demonstrations</span></h2>
+          <p>Real interaction recordings showing how each module operates inside the screening process.</p>
+        </div>
+
+        <div class="grid grid-4 demo-grid">
+          <article class="card glass demo-card">
+            <span class="pill pill-primary"><span class="dot"></span> Module 01</span>
+            <div class="demo-media" style="--poster:url('images/posters/cognitive.svg')">
+              <video autoplay muted loop playsinline preload="metadata" poster="images/posters/cognitive.svg"
+                class="demo-video">
+                <source src="videos/1.1.mp4" type="video/mp4" />
+              </video>
+              <span class="demo-badge">Cognitive Flexibility</span>
+            </div>
+            <h3>Cognitive Flexibility</h3>
+            <p>Executive-function testing through interactive switching tasks, scored by lightweight ML models.</p>
+          </article>
+
+          <article class="card glass demo-card">
+            <span class="pill pill-primary"><span class="dot"></span> Module 02</span>
+            <div class="demo-media" style="--poster:url('images/posters/gaze.svg')">
+              <video autoplay muted loop playsinline preload="metadata" poster="images/posters/gaze.svg"
+                class="demo-video">
+                <source src="videos/2.1.mp4" type="video/mp4" />
+              </video>
+              <span class="demo-badge">Gaze Tracking</span>
+            </div>
+            <h3>Gaze Tracking</h3>
+            <p>Eye movement and visual attention tracking using computer vision to detect early gaze-pattern markers.
+            </p>
+          </article>
+
+          <article class="card glass demo-card">
+            <span class="pill pill-primary"><span class="dot"></span> Module 03</span>
+            <div class="demo-media" style="--poster:url('images/posters/rtn.svg')">
+              <video autoplay muted loop playsinline preload="metadata" poster="images/posters/rtn.svg"
+                class="demo-video">
+                <source src="videos/3.1.mp4" type="video/mp4" />
+              </video>
+              <span class="demo-badge">RTN Module</span>
+            </div>
+            <h3>Response to Name (RTN)</h3>
+            <p>Auditory engagement detection — measuring response latency and orientation when the child's name is
+              called.</p>
+          </article>
+
+          <article class="card glass demo-card">
+            <span class="pill pill-primary"><span class="dot"></span> Module 04</span>
+            <div class="demo-media" style="--poster:url('images/posters/behavior.svg')">
+              <video autoplay muted loop playsinline preload="metadata" poster="images/posters/behavior.svg"
+                class="demo-video">
+                <source src="videos/4.1.mp4" type="video/mp4" />
+              </video>
+              <span class="demo-badge">Behavioral Analysis</span>
+            </div>
+            <h3>Behavioral Analysis</h3>
+            <p>Child interaction patterns, posture cues, and engagement signals captured during interactive tasks.</p>
+          </article>
+
+
+
+
+        </div>
+
+        <p class="demo-note">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 16v-4M12 8h.01" />
+          </svg>
+          Place compressed component recordings in <code>videos/</code> — <code>gaze.mp4</code>,
+          <code>behavior.mp4</code>, <code>rtn.mp4</code>, <code>cognitive.mp4</code>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============== MILESTONES ============== -->
+    <section id="milestones" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="pill pill-primary"><span class="dot"></span> Timeline</span>
+          <h2>Project <span class="grad-text">Milestones</span></h2>
+          <p>Academic deliverables, presentations, and evaluations across the research lifecycle.</p>
+        </div>
+
+        <div class="timeline">
+          <span class="timeline-line" aria-hidden="true"></span>
+
+          <div class="tl-item left">
+            <span class="tl-dot"></span>
+            <div class="card glass">
+              <div class="tl-row"><span class="tl-date">October 2025</span><span class="tl-mark">10%</span></div>
+              <h3>Project Proposal</h3>
+              <p>Initial domain research, problem identification, and methodology planning.</p>
+            </div>
+          </div>
+
+          <div class="tl-item right">
+            <span class="tl-dot"></span>
+            <div class="card glass">
+              <div class="tl-row"><span class="tl-date">January 2026</span><span class="tl-mark">15%</span></div>
+              <h3>Progress Presentation 1</h3>
+              <p>Demonstration of UI/UX, initial backend setup, and dataset collection strategy.</p>
+            </div>
+          </div>
+
+          <div class="tl-item left">
+            <span class="tl-dot"></span>
+            <div class="card glass">
+              <div class="tl-row"><span class="tl-date">March 2026</span><span class="tl-mark">20%</span></div>
+              <h3>Progress Presentation 2</h3>
+              <p>Integration of ML models, computer vision modules, and preliminary testing results.</p>
+            </div>
+          </div>
+
+          <div class="tl-item right">
+            <span class="tl-dot"></span>
+            <div class="card glass">
+              <div class="tl-row"><span class="tl-date">April 2026</span><span class="tl-mark">35%</span></div>
+              <h3>Final Assessment</h3>
+              <p>Complete system demonstration, clinical validation results, and final report submission.</p>
+            </div>
+          </div>
+
+          <div class="tl-item left">
+            <span class="tl-dot"></span>
+            <div class="card glass">
+              <div class="tl-row"><span class="tl-date">May 2026</span><span class="tl-mark">20%</span></div>
+              <h3>Final Viva</h3>
+              <p>Defense of the research methodology, technical architecture, and overall contribution.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== DOCUMENTS ============== -->
+    <section id="documents" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="pill pill-primary"><span class="dot"></span> Artifacts</span>
+          <h2>Project <span class="grad-text">Documents</span></h2>
+          <p>Downloadable research artifacts, proposal documents, and final reports.</p>
+        </div>
+
+        <div class="grid grid-4">
+          <div class="card glass tile-card">
+            <div class="icon-tile primary lg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="8" y1="13" x2="16" y2="13" />
+                <line x1="8" y1="17" x2="16" y2="17" />
+              </svg>
+            </div>
+            <h3>Project Charter</h3>
+            <p>Initial scope, objectives, and stakeholder definitions.</p>
+            <a href="https://drive.google.com/file/d/1bC8ARYGbLW3RKEc5cSB-jQLFUIsmnSXb/view?usp=drive_link"
+              target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-block">View Document</a>
+          </div>
+          <div class="card glass tile-card">
+            <div class="icon-tile primary lg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="8" y1="13" x2="16" y2="13" />
+                <line x1="8" y1="17" x2="16" y2="17" />
+              </svg>
+            </div>
+            <h3>Proposal Document</h3>
+            <p>Comprehensive literature review and proposed architecture.</p>
+            <a href="#lb-proposal-docs" class="btn btn-ghost btn-block">View Document</a>
+          </div>
+          <div class="card glass tile-card">
+            <div class="icon-tile primary lg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="8" y1="13" x2="16" y2="13" />
+                <line x1="8" y1="17" x2="16" y2="17" />
+              </svg>
+            </div>
+            <h3>Checklists</h3>
+            <p>Submission checklists for proposal and final evaluations.</p>
+            <a href="#lb-checklists" class="btn btn-ghost btn-block">View Checklists</a>
+          </div>
+          <div class="card glass tile-card">
+            <div class="icon-tile gradient lg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+            </div>
+            <h3>Final Reports</h3>
+            <p>Complete thesis, testing results, and system documentation.</p>
+            <a href="#lb-final-docs" class="btn btn-primary btn-block">Download Reports</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== PRESENTATIONS ============== -->
+    <section id="presentations" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="pill pill-primary"><span class="dot"></span> Slide Decks</span>
+          <h2>Project <span class="grad-text">Presentations</span></h2>
+          <p>Visual materials used during academic evaluations.</p>
+        </div>
+
+        <div class="grid grid-4">
+          <a href="https://docs.google.com/presentation/d/1cFhiUbR56A3fF-5EU6UaCTvJ8cY6xlRI/edit?usp=drive_link&ouid=111563053953845550713&rtpof=true&sd=true"
+            target="_blank" rel="noopener noreferrer" class="card glass slide-card">
+            <div class="icon-tile accent">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <h3>Proposal Presentation</h3>
+            <p>Initial pitch covering problem, gap, and proposed system.</p>
+            <span class="card-link">View Slides
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round">
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+            </span>
+          </a>
+          <a href="https://docs.google.com/presentation/d/1b4BuQ_i0lTnGxu_kSqL4fL7WVTPDA8j6/edit?usp=sharing&ouid=111563053953845550713&rtpof=true&sd=true"
+            target="_blank" rel="noopener noreferrer" class="card glass slide-card">
+            <div class="icon-tile accent">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <h3>Progress Presentation 1</h3>
+            <p>Backend, dataset, and prototype walkthrough.</p>
+            <span class="card-link">View Slides
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round">
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+            </span>
+          </a>
+          <a href="https://docs.google.com/presentation/d/1oLImcc4nh--cmS-c5WfO6Q3cF6X_60Y5/edit?usp=drive_link&ouid=111563053953845550713&rtpof=true&sd=true"
+            target="_blank" rel="noopener noreferrer" class="card glass slide-card">
+            <div class="icon-tile accent">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <h3>Progress Presentation 2</h3>
+            <p>ML integration and computer vision module results.</p>
+            <span class="card-link">View Slides
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round">
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+            </span>
+          </a>
+          <a href="PASTE_LINK_HERE" target="_blank" rel="noopener noreferrer" class="card glass slide-card">
+            <div class="icon-tile accent">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <h3>Final Presentation</h3>
+            <p>End-to-end system demonstration and validation.</p>
+            <span class="card-link">View Slides
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round">
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== ABOUT ============== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="pill pill-primary"><span class="dot"></span> The Team</span>
+          <h2>About <span class="grad-text">Us</span></h2>
+          <p>Supervisors and team members behind SenseAI.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="card glass team">
+            <div class="avatar"><img src="images/samanthi.jpeg" alt="Mrs. Samanthi Siriwardena"></div>
+            <h3>Mrs. Samanthi Siriwardena</h3>
+            <div class="role">Supervisor</div>
+            <p>Guiding research direction, methodology, and academic rigor.</p>
+          </div>
+          <div class="card glass team">
+            <div class="avatar"><img src="images/mihiri.jpeg" alt="Mrs. Mihiri Samaraweera"></div>
+            <h3>Mrs.Mihiri Samaraweera</h3>
+            <div class="role">Co-Supervisor</div>
+            <p>Technical guidance on AI architecture and implementation.</p>
+          </div>
+          <div class="card glass team">
+            <div class="avatar"><img src="images/samindi.jfif" alt="M.H Samindi Sankalpani"></div>
+            <h3>M.H Samindi Sankalpani</h3>
+            <div class="role">Cognitive Flexibility</div>
+            <p>Designing cognitive tasks and ML scoring models.</p>
+          </div>
+          <div class="card glass team">
+            <div class="avatar"><img src="images/sandeepa.png" alt="S.M Karunathilaka"></div>
+            <h3>S.M Karunathilaka</h3>
+            <div class="role">Gaze Tracking · CV</div>
+            <p>Computer vision pipelines for eye gaze and attention analysis.</p>
+          </div>
+          <div class="card glass team">
+            <div class="avatar"><img src="images/hasini.png" alt="I.M.H Ilanganthilake"></div>
+            <h3>I.M.H Ilanganthilake</h3>
+            <div class="role">Behavioral Analysis</div>
+            <p>Modeling behavioral signals from interactive tasks.</p>
+          </div>
+          <div class="card glass team">
+            <div class="avatar"><img src="images/geethika.png" alt="K.G.G.K.Senavirathna"></div>
+            <h3>K.G.G.K.Senavirathna </h3>
+            <div class="role">RTN Module</div>
+            <p>Response-to-Name detection and audio-visual integration.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== CONTACT ============== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="pill pill-primary"><span class="dot"></span> Get in touch</span>
+          <h2>Contact <span class="grad-text">Us</span></h2>
+          <p>Questions about our research, methodology, or collaboration opportunities? Reach out.</p>
+        </div>
+
+        <div class="contact-grid">
+          <a href="mailto:senseai.project@gmail.com" class="card glass contact">
+            <div class="icon-tile accent">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <span class="c-label">Email</span>
+            <span class="c-value">senseai.project@gmail.com</span>
+          </a>
+          <a href="tel:+94771234567" class="card glass contact">
+            <div class="icon-tile accent">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </div>
+            <span class="c-label">Phone</span>
+            <span class="c-value">+94 784939427</span>
+          </a>
+          <a href="#" class="card glass contact">
+            <div class="icon-tile accent">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <span class="c-label">Location</span>
+            <span class="c-value">Sri Lanka Institute of Information Technology, Malabe</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="brand">
+        <img src="images/logo.jpg" alt="SenseAI" class="brand-logo" />
+        <div>
+          <div class="brand-name">Sense<span class="grad-text">AI</span></div>
+          <div class="brand-sub">Early Autism Screening Research</div>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <p>© 2026 SenseAI Research Project. All rights reserved.</p>
+        <p class="muted">Developed for Final Year Academic Evaluation</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ============== LIGHTBOXES ============== -->
+
+  <!-- ============== DOCUMENT SELECTION LIGHTBOXES ============== -->
+  <div id="lb-proposal-docs" class="lightbox" role="dialog" aria-label="Proposal Document Selection">
+    <a href="#documents" class="lightbox-backdrop" aria-label="Close"></a>
+    <div class="lightbox-frame" style="aspect-ratio: auto; min-height: 480px; display: flex; flex-direction: column;">
+      <span class="lightbox-title">Proposal Document Selection</span>
+      <a href="#documents" class="lightbox-close" aria-label="Close">&times;</a>
+
+      <div class="doc-menu">
+        <a href="https://drive.google.com/file/d/1EkFgnnBqc1k4X8GTBiaYTUIqSj9hbeK1/view?usp=drive_link" target="_blank"
+          rel="noopener noreferrer" class="doc-link-item">
+          <div class="doc-link-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+            </svg></div>
+          <div class="doc-link-content"><span class="doc-link-title">Member 1 Document</span><span
+              class="doc-link-sub">Individual Proposal Sub-part</span></div>
+          <svg class="doc-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5">
+            <path d="M5 12h14M13 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a href="https://drive.google.com/file/d/1tzOuxuGx83ehZl1h7gjWkytYMXofnMUN/view?usp=drive_link" target="_blank"
+          rel="noopener noreferrer" class="doc-link-item">
+          <div class="doc-link-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+            </svg></div>
+          <div class="doc-link-content"><span class="doc-link-title">Member 2 Document</span><span
+              class="doc-link-sub">Individual Proposal Sub-part</span></div>
+          <svg class="doc-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5">
+            <path d="M5 12h14M13 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a href="https://drive.google.com/file/d/1XTy4KLOQYUGvGNzdiChsnUw8ZJSg8QmJ/view?usp=drive_link" target="_blank"
+          rel="noopener noreferrer" class="doc-link-item">
+          <div class="doc-link-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+            </svg></div>
+          <div class="doc-link-content"><span class="doc-link-title">Member 3 Document</span><span
+              class="doc-link-sub">Individual Proposal Sub-part</span></div>
+          <svg class="doc-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5">
+            <path d="M5 12h14M13 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a href="PASTE_LINK_HERE" target="_blank" rel="noopener noreferrer" class="doc-link-item">
+          <div class="doc-link-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+            </svg></div>
+          <div class="doc-link-content"><span class="doc-link-title">Member 4 Document</span><span
+              class="doc-link-sub">Individual Proposal Sub-part</span></div>
+          <svg class="doc-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5">
+            <path d="M5 12h14M13 5l7 7-7 7" />
+          </svg>
+        </a>
+        <!-- <a href="PASTE_LINK_HERE" target="_blank" rel="noopener noreferrer" class="doc-link-item">
+          <div class="doc-link-icon" style="background: rgba(246,161,18,.15); color: var(--amber-2);"><svg
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg></div>
+          <div class="doc-link-content"><span class="doc-link-title">Group Document</span><span
+              class="doc-link-sub">Complete Proposal Document</span></div>
+          <svg class="doc-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5">
+            <path d="M5 12h14M13 5l7 7-7 7" />
+          </svg>
+        </a> -->
+      </div>
+    </div>
+  </div>
+
+  <div id="lb-final-docs" class="lightbox" role="dialog" aria-label="Final Reports Selection">
+    <a href="#documents" class="lightbox-backdrop" aria-label="Close"></a>
+    <div class="lightbox-frame" style="aspect-ratio: auto; min-height: 480px; display: flex; flex-direction: column;">
+      <span class="lightbox-title">Final Reports Selection</span>
+      <a href="#documents" class="lightbox-close" aria-label="Close">&times;</a>
+
+      <div class="doc-menu">
+        <a href="PASTE_LINK_HERE" target="_blank" rel="noopener noreferrer" class="doc-link-item">
+          <div class="doc-link-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+            </svg></div>
+          <div class="doc-link-content"><span class="doc-link-title">Member 1 Final Thesis</span><span
+              class="doc-link-sub">Individual Final Report</span></div>
+          <svg class="doc-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5">
+            <path d="M5 12h14M13 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a href="https://drive.google.com/file/d/1KEO5hThSs_GspfmOCTbCDk0QRpYRsasU/view?usp=drive_link" target="_blank"
+          rel="noopener noreferrer" class="doc-link-item">
+          <div class="doc-link-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+            </svg></div>
+          <div class="doc-link-content"><span class="doc-link-title">Member 2 Final Thesis</span><span
+              class="doc-link-sub">Individual Final Report</span></div>
+          <svg class="doc-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5">
+            <path d="M5 12h14M13 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a href="https://drive.google.com/file/d/10PzWvGwMyjFajrLFvBh2nxhj7u0Oqp2-/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="doc-link-item">
+          <div class="doc-link-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+            </svg></div>
+          <div class="doc-link-content"><span class="doc-link-title">Member 3 Final Thesis</span><span
+              class="doc-link-sub">Individual Final Report</span></div>
+          <svg class="doc-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5">
+            <path d="M5 12h14M13 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a href="PASTE_LINK_HERE" target="_blank" rel="noopener noreferrer" class="doc-link-item">
+          <div class="doc-link-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+            </svg></div>
+          <div class="doc-link-content"><span class="doc-link-title">Member 4 Final Thesis</span><span
+              class="doc-link-sub">Individual Final Report</span></div>
+          <svg class="doc-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5">
+            <path d="M5 12h14M13 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a href="PASTE_LINK_HERE" target="_blank" rel="noopener noreferrer" class="doc-link-item">
+          <div class="doc-link-icon" style="background: rgba(246,161,18,.15); color: var(--amber-2);"><svg
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg></div>
+          <div class="doc-link-content"><span class="doc-link-title">Group Document</span><span
+              class="doc-link-sub">Complete Final Group Report</span></div>
+          <svg class="doc-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5">
+            <path d="M5 12h14M13 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+<div id="lb-checklists" class="lightbox" role="dialog" aria-label="Checklist Selection">
+  <a href="#documents" class="lightbox-backdrop" aria-label="Close"></a>
+  <div class="lightbox-frame" style="aspect-ratio: auto; min-height: 280px; display: flex; flex-direction: column;">
+    <span class="lightbox-title">Checklist Selection</span>
+    <a href="#documents" class="lightbox-close" aria-label="Close">&times;</a>
+
+    <div class="doc-menu">
+      <a href="https://github.com/SamindiS/Autism_Screening_Tool_25-26J-273" target="_blank" rel="noopener noreferrer"
+        class="doc-link-item">
+        <div class="doc-link-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 11l3 3L22 4" />
+            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+          </svg></div>
+        <div class="doc-link-content"><span class="doc-link-title">Proposal Checklist</span><span
+            class="doc-link-sub">Submission requirements for proposal phase</span></div>
+        <svg class="doc-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2.5">
+          <path d="M5 12h14M13 5l7 7-7 7" />
+        </svg>
+      </a>
+      <a href="PASTE_LINK_HERE" target="_blank" rel="noopener noreferrer" class="doc-link-item">
+        <div class="doc-link-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 11l3 3L22 4" />
+            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+          </svg></div>
+        <div class="doc-link-content"><span class="doc-link-title">Final Evaluation Checklist</span><span
+            class="doc-link-sub">Submission requirements for final phase</span></div>
+        <svg class="doc-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2.5">
+          <path d="M5 12h14M13 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+</html>
