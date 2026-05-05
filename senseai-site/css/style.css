@@ -444,15 +444,108 @@ p { margin: 0; color: var(--muted); text-wrap: pretty; }
 .team p { margin-top: 12px; }
 
 /* ============ Contact ============ */
-.contact-grid {
-  max-width: 920px; margin: 0 auto;
-  display: grid; gap: 20px; grid-template-columns: repeat(3, 1fr);
+.contact-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: start;
 }
-@media (max-width: 720px) { .contact-grid { grid-template-columns: 1fr; } }
-.contact { text-align: center; display: flex; flex-direction: column; align-items: center; }
-.contact .icon-tile { margin: 0 auto 14px; }
-.c-label { font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
-.c-value { font-size: 15px; font-weight: 600; margin-top: 6px; word-break: break-all; }
+@media (max-width: 840px) {
+  .contact-container { grid-template-columns: 1fr; }
+}
+
+.contact-info {
+  display: grid;
+  gap: 16px;
+}
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  text-align: left;
+}
+.contact-card .icon-tile { margin-bottom: 0; }
+.c-label { display: block; font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+.c-value { display: block; font-size: 14px; font-weight: 600; margin-top: 4px; word-break: break-all; color: var(--fg); }
+
+/* Form Styles */
+.form-wrapper {
+  padding: 36px 32px;
+  background: rgba(14, 26, 34, 0.6);
+}
+.form-header { margin-bottom: 28px; }
+.form-header h3 { font-size: 24px; font-weight: 700; margin-bottom: 6px; }
+.form-header p { font-size: 14px; }
+
+.form-group {
+  position: relative;
+  margin-bottom: 24px;
+}
+.form-input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-2);
+  border-radius: 12px;
+  padding: 16px;
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--fg);
+  transition: border-color 0.3s var(--ease), background 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+.form-textarea { resize: vertical; min-height: 120px; }
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--teal);
+  background: rgba(2, 178, 170, 0.05);
+  box-shadow: 0 0 0 4px rgba(2, 178, 170, 0.1);
+}
+
+.form-label {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  font-size: 14px;
+  color: var(--muted);
+  pointer-events: none;
+  transition: transform 0.25s var(--ease), color 0.25s var(--ease), font-size 0.25s var(--ease);
+  transform-origin: left top;
+}
+
+/* Floating Label Animation */
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown) ~ .form-label {
+  transform: translateY(-26px) scale(0.85);
+  color: var(--teal-2);
+  font-weight: 600;
+}
+
+.form-submit { margin-top: 12px; height: 52px; font-size: 15px; }
+
+.form-status {
+  margin-top: 16px;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  min-height: 20px;
+}
+.form-status.success { color: #4cd6cf; }
+.form-status.error { color: #ff6b6b; }
+
+.spinner {
+  animation: spin 2s linear infinite;
+}
+.spin-anim {
+  animation: spin 1.5s linear infinite;
+  transform-origin: center;
+}
+@keyframes spin { 100% { transform: rotate(360deg); } }
+
+/* Utility for IntersectionObserver */
+.is-visible { animation: fade-in-up .9s var(--ease) forwards; opacity: 1 !important; }
 
 /* ============ Footer ============ */
 .footer { border-top: 1px solid var(--border); margin-top: 40px; padding: 48px 0; }
