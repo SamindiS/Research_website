@@ -665,6 +665,39 @@ p { margin: 0; color: var(--muted); text-wrap: pretty; }
   padding: 32px;
   min-height: 360px;
 }
+
+/* References List Styles */
+.ref-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 12px;
+  margin-top: 10px;
+}
+.ref-container::-webkit-scrollbar { width: 6px; }
+.ref-container::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 10px; border: none; }
+.ref-container::-webkit-scrollbar-thumb:hover { background: var(--amber); }
+
+.ref-item {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--muted);
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  display: flex;
+  gap: 10px;
+}
+.ref-item:last-child { border-bottom: none; }
+.ref-num {
+  font-weight: 700;
+  color: var(--amber-2);
+  flex-shrink: 0;
+  font-family: 'Space Grotesk', sans-serif;
+}
+.ref-text { flex: 1; }
+
 .dpane {
   display: none;
   opacity: 1;
