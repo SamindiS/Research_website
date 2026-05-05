@@ -75,6 +75,10 @@ document.addEventListener('DOMContentLoaded', () => {
       formStatus.className = 'form-status';
 
       const formData = new FormData(contactForm);
+      // Create a unique subject line to prevent Gmail from threading the emails
+      const senderName = formData.get('name') || 'Guest';
+      formData.set('_subject', `New Message from ${senderName} - SenseAI Website`);
+      
       const object = Object.fromEntries(formData);
       const json = JSON.stringify(object);
 
